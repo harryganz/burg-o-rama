@@ -8,6 +8,10 @@
   },
   "author": "Harry Ganz <hganz@harryganz.com>",
   "license": "MIT",
+  "jshintConfig": {
+      "node": true,
+      "esversion": 6
+  },
   "dependencies": {
     "body-parser": "^1.15.0",
     "ejs": "^2.4.1",
