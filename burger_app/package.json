@@ -1,0 +1,19 @@
+{
+  "name": "burg-o-rama",
+  "version": "0.0.1",
+  "description": "An app to manage burger orders at burg-o-rama",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "author": "Harry Ganz <hganz@harryganz.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "method-override": "^2.3.5",
+    "morgan": "^1.7.0",
+    "pg": "^4.4.6"
+  }
+}
