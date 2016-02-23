@@ -26,7 +26,7 @@ burgers.get('/:id/edit', dummyFunction);
 burgers.
   route('/:id').
   get(showBurger, function(req, res){
-    res.send(res.data);
+    res.render('pages/show', {burger: res.data});
   }).
   put(editBurger, function(req, res){
     res.redirect(303, '/burgers/'+res.id);
