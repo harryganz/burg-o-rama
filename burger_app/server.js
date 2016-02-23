@@ -19,7 +19,7 @@ app.use(morgan('dev'));
 
 // Dynamic Routes
 app.get('/', function(req, res){
-  res.send('HOMEPAGE');
+  res.render('pages/home.ejs');
 });
 app.use('/burgers', require(path.join(__dirname, '/routes/burgers')));
 
