@@ -1,7 +1,48 @@
+/* Document Styles */
 body {
-  padding-top: 50px;
+  font-size: 16px;
 }
-.starter-template {
-  padding: 40px 15px;
+
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header Styles */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 2em 0 1em 0;
+  margin-bottom: 4em;
+}
+
+header h1 {
   text-align: center;
+  padding-bottom: 0.5em;
+}
+
+nav {
+  min-width: 696px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 2em;
+}
+
+#main {
+  padding: 0 2em;
 }
