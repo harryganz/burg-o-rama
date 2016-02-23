@@ -18,7 +18,9 @@ var burgerData = [
 burgers.get('/', listBurgers, function(req, res){
   res.render('pages/list', {burgers: res.data});
 });
-burgers.get('/new', dummyFunction);
+burgers.get('/new', function(req, res){
+  res.render('pages/new');
+});
 burgers.post('/', addBurger, function(req, res){
   res.redirect('/burgers/'+res.id);
 });
@@ -37,7 +39,8 @@ burgers.
 
 function addBurger(req, res, next){
   burgerData.push(req.body);
-  res.id = req.body.id;
+  res.id = burgerData.length.toString();
+  req.body.id = res.id;
   next();
 }
 

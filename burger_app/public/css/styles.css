@@ -77,14 +77,19 @@ nav ul li {
   margin-bottom: 0;
 }
 
-.card form .button {
+form .button {
   color: #fff;
 }
 
-.card form .danger-button {
+form .danger-button {
   background-color: #f00;
 }
 
-.card form .edit-button {
+form .edit-button {
   background-color: #00f;
+}
+
+.form-group {
+  display: inline-block;
+  margin: 0.5em;
 }

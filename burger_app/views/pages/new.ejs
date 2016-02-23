@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ../partials/head %>
+<body>
+  <%- include ../partials/header %>
+  <h3>Add A Burger</h3>
+  <form action="/burgers" method="post">
+    <div class="form-group">
+      <label for="meat">Meat</label>
+      <input type="text" name="meat" value="">
+    </div>
+    <div class="form-group">
+      <label for="doneness">Doneness</label>
+      <input type="text" name="doneness" value="">
+    </div>
+    <div class="form-group">
+      <label for="cheese">Cheese</label>
+      <input type="text" name="cheese" value="">
+    </div>
+    <div class="form-group">
+      <label for="extras">Extras</label>
+      <input type="text" name="extras" value="">
+    </div>
+    <div class="button-group">
+      <input type="submit" value="submit" class="button edit-button">
+      <a href="/burgers" class="button danger-button">Cancel</a>
+    </div>
+  </form>
+</body>
+</html>
