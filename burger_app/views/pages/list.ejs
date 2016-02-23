@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ../partials/head %>
+<body>
+<%- include ../partials/header %>
+<div id="main">
+  <h3>Burgers List</h3>
+  <div class="flexbox">
+    <% burgers.forEach(function(burger, index){%>
+      <div class="card">
+        <h3>Burger <%= index+1 %></h3>
+        <ul>
+          <li>Meat: <%= burger.meat %></li>
+          <li>Doneness: <%= burger.doneness %></li>
+          <li>Cheese: <%= burger.cheese || 'None' %></li>
+          <li>Extras: <%= burger.extras || 'None' %></li>
+        </ul>
+          <a href="/burgers/<%= burger.id %>" class="show-button button">Show Burger</a>
+          <form action="/burgers/<%= burger.id %>?_method=DELETE" method="post">
+            <a href="/burgers/<%= burger.id %>/edit" class="edit-button button">Edit</a>
+            <input type="submit" value="Delete" class="danger-button button">
+          </form>
+      </div>
+    <%})%>
+  </div>
+</div>
+</body>
+</html>

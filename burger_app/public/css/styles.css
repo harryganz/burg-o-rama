@@ -46,3 +46,46 @@ nav ul li {
 #main {
   padding: 0 2em;
 }
+
+/* Flexbox styles */
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1em;
+  padding: 0.75em;
+  border: 2px solid #ddd;
+  border-radius: 5%;
+}
+
+.card h3 {
+  text-align: center;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card .show-button {
+  display: block;
+  margin: inherit auto;
+}
+
+.card form {
+  margin-bottom: 0;
+}
+
+
+.card form .button {
+  color: #fff;
+}
+
+.card form .danger-button {
+  background-color: #f00;
+}
+
+.card form .edit-button {
+  background-color: #00f;
+}

@@ -16,7 +16,7 @@ var burgerData = [
 
 
 burgers.get('/', listBurgers, function(req, res){
-  res.send(res.data);
+  res.render('pages/list', {burgers: res.data});
 });
 burgers.get('/new', dummyFunction);
 burgers.post('/', addBurger, function(req, res){
